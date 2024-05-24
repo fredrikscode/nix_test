@@ -85,6 +85,15 @@
     #   enable = true;
     #   plugins = with pkgs.xfce; [ thunar-archive-plugin thunar-volman ];
     # };
+    vscode = {
+      enable = true;
+      extensions = with pkgs.vscode-extensions; [
+        equinusocio.vsc-material-theme
+        pkief.material-icon-theme
+        ms-vscode-remote.remote-ssh
+        ms-python.python
+      ];
+    };
   };
 
   nixpkgs.config.allowUnfree = true;
@@ -100,12 +109,21 @@
       tokyo-night = pkgs.libsForQt5.callPackage ../../pkgs/sddm-tokyo-night.nix { };
   in
   with pkgs; [
-    vim
+    neovim
     wget
     git
     appimage-run
     sugar.sddm-sugar-dark
     tokyo-night
+    wezterm
+    brave
+    tldr
+    dig
+    discord
+    spotify
+    yubikey-manager-qt
+    mpv
+    xivlauncher
   ];
 
   services = {

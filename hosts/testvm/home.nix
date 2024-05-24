@@ -53,6 +53,7 @@ in
   home.file.".config/starship.toml".source = ../../config/starship.toml;
   home.file.".base16-themes".source = ../../config/base16-themes;
   home.file.".emoji".source = ../../config/emoji;
+  home.file.".config/wezterm/wezterm.lua".source = ../../config/wezterm.lua
 
   # Install & Configure Git
   programs.git = {
