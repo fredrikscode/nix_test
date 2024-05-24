@@ -66,25 +66,25 @@
       xwayland.enable = true;
     };
     # firefox.enable = true;
-    # dconf.enable = true;
-    # seahorse.enable = true;
-    # fuse.userAllowOther = true;
+    dconf.enable = true;
+    seahorse.enable = true;
+    fuse.userAllowOther = true;
     # mtr.enable = true;
-    # gnupg.agent = {
-    #   enable = true;
-    #   enableSSHSupport = true;
-    # };
+    gnupg.agent = {
+      enable = true;
+      enableSSHSupport = true;
+    };
     virt-manager.enable = true;
-    # steam = {
-    #   enable = true;
-    #   gamescopeSession.enable = true;
-    #   remotePlay.openFirewall = true;
-    #   dedicatedServer.openFirewall = true;
-    # };
-    # thunar = {
-    #   enable = true;
-    #   plugins = with pkgs.xfce; [ thunar-archive-plugin thunar-volman ];
-    # };
+    steam = {
+      enable = true;
+      gamescopeSession.enable = true;
+      remotePlay.openFirewall = true;
+      dedicatedServer.openFirewall = true;
+    };
+    thunar = {
+      enable = true;
+      plugins = with pkgs.xfce; [ thunar-archive-plugin thunar-volman ];
+    };
     vscode = {
       enable = true;
       extensions = with pkgs.vscode-extensions; [
