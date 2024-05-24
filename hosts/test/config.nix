@@ -112,10 +112,36 @@
     neovim
     wget
     git
+    networkmanagerapplet
+    swww
+    grim
+    slurp
+    gnome.file-roller
+    imv
+    pavucontrol
+    protonup-qt
     appimage-run
-    sugar.sddm-sugar-dark
-    tokyo-night
+    swaynotificationcenter
+    libnotify
+    killall
+    pkg-config
+    meson
+    gnumake
+    ninja
+    lm_sensors
+    pciutils
+    unrar
+    unzip
     wezterm
+    wl-clipboard
+    (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
+    sugar.sddm-sugar-dark
+    font-awesome
+    pkgs.libsForQt5.qt5.qtgraphicaleffects
+    symbola
+    noto-fonts-color-emoji
+    material-icons
+    tokyo-night
     brave
     tldr
     dig
@@ -124,7 +150,6 @@
     yubikey-manager-qt
     mpv
     xivlauncher
-    swaynotificationcenter
   ];
 
   services = {
@@ -150,12 +175,12 @@
     openssh.enable = true;
     flatpak.enable = false;
     printing.enable = true;
-    #gnome.gnome-keyring.enable = true;
-    # avahi = {
-    #   enable = true;
-    #   nssmdns4 = true;
-    #   openFirewall = true;
-    # };
+    gnome.gnome-keyring.enable = true;
+    avahi = {
+      enable = true;
+      nssmdns4 = true;
+      openFirewall = true;
+    };
     #ipp-usb.enable = true;
     syncthing = {
       enable = false;
