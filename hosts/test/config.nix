@@ -124,6 +124,7 @@
     yubikey-manager-qt
     mpv
     xivlauncher
+    swaynotificationcenter
   ];
 
   services = {
